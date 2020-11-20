@@ -1,0 +1,8 @@
+# To lock/unlock Windows policy on running scripts
+set-executionpolicy remotesigned
+
+# Build a dist folder and launch electron
+ng build --base-href ./ && electron .
+
+# Build an executable of the electron app
+electron-packager . bakemono --electron-version=v11.0.2 --overwrite
