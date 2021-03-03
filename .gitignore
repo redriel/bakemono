@@ -1,2 +1,3 @@
-bakemono/bakemono-win32-x64.zip
-bakemono/bakemono-win32-x64
+/__pycache__
+/.vs
+/lib/__pycache__
