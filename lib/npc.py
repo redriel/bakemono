@@ -16,6 +16,7 @@ class NPC():
         self.pronoun = "he" if self.gender == "male" else "she"
 
     def stringify(self):
+        self.pronoun = "he" if self.gender == "male" else "she"
         line1 = (f"You meet a {self.gender} {self.race} named {self.name} {self.surname}.\n")
         line2 = (f"{self.name} appears {self.ability}.\n")
         line3 = (f"You notice {self.pronoun} has {self.appearance}.\n")

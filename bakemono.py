@@ -42,6 +42,8 @@ class BakemonoFrame(wx.Frame):
         self.npc = npc.NPC()
         if self.select_races.GetSelection() > 0:
             self.npc.race = self.select_races.GetString(self.select_races.GetSelection()).strip()
+        if self.genderBox.GetSelection() > 0:
+            self.npc.gender = self.genderBox.GetString(self.genderBox.GetSelection()).strip().lower()
         self.textbox.SetValue(self.npc.stringify())
         print(self.npc.stringify())
 
